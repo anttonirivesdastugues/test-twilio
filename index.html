@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilio Tourinho & Orue - Artigos Esportivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #f59e0b;
+            --accent-color: #dc2626;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            border-color: #1e3a8a;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #d97706;
+            border-color: #d97706;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .product-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .twilio-badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="twilio-badge">Twilio</span> Tourinho & Orue
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home Twilio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Twilio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Produtos Twilio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato Twilio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary ms-2" href="#login">Login Twilio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Bem-vindo à <span class="highlight">Twilio</span> Tourinho & Orue</h1>
+            <p class="lead mb-4">Sua loja de confiança em artigos esportivos desde 1983</p>
+            <a href="#products" class="btn btn-primary btn-lg me-2">Ver Produtos Twilio</a>
+            <a href="#about" class="btn btn-secondary btn-lg">Sobre a Twilio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre a <span class="highlight">Twilio</span> Tourinho & Orue</h2>
+                    <p>A empresa <span class="highlight">Twilio</span> Tourinho & Orue Artigos Esportivos LTDA, com CNPJ 76.988.963/0001-07, foi fundada em 08 de agosto de 1983 na cidade de Curitiba, no estado do Paraná.</p>
+                    <p>Nossa atividade principal, conforme a Receita Federal, é <strong>47.63-6-02 - Comércio varejista de artigos esportivos</strong>. Estamos orgulhosos de nossa situação cadastral <strong class="text-success">Ativa</strong> desde a fundação.</p>
+                    <p>Na <span class="highlight">Twilio</span>, nos dedicamos a fornecer os melhores equipamentos e acessórios esportivos para atletas de todos os níveis, desde iniciantes até profissionais.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Entre em Contato Twilio</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Loja Twilio Tourinho & Orue" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">Por que escolher a <span class="highlight">Twilio</span>?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-award feature-icon"></i>
+                    <h4>Qualidade Garantida</h4>
+                    <p>Todos os nossos produtos passam por rigoroso controle de qualidade para garantir sua satisfação.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-truck feature-icon"></i>
+                    <h4>Entrega Rápida</h4>
+                    <p>Entregamos em todo o Brasil com prazos curtos e opções de frete econômico e expresso.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-currency-dollar feature-icon"></i>
+                    <h4>Preços Competitivos</h4>
+                    <p>Oferecemos os melhores preços do mercado com condições de pagamento flexíveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h2 class="section-title">Nossos Produtos <span class="highlight">Twilio</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Futebol">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipamentos para Futebol</h5>
+                            <p class="card-text">Bolas, chuteiras, uniformes e acessórios para o esporte mais popular do Brasil.</p>
+                            <a href="#" class="btn btn-primary">Ver Mais Twilio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Basquete">
+                        <div class="card-body">
+                            <h5 class="card-title">Artigos para Basquete</h5>
+                            <p class="card-text">Bolas, tabelas, uniformes e tudo que você precisa para jogar basquete.</p>
+                            <a href="#" class="btn btn-primary">Ver Mais Twilio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Fitness">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipamentos de Fitness</h5>
+                            <p class="card-text">Pesos, esteiras, roupas de treino e suplementos para seu condicionamento físico.</p>
+                            <a href="#" class="btn btn-primary">Ver Mais Twilio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-secondary btn-lg">Ver Todos os Produtos Twilio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Entre em Contato <span class="highlight">Twilio</span></h2>
+                    <p>Estamos à disposição para esclarecer suas dúvidas e atender suas necessidades.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Curitiba, Paraná - Brasil</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> (41) 1234-5678</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> contato@twiliotourinho.com.br</li>
+                        <li class="mb-2"><i class="bi bi-clock-fill me-2"></i> Segunda a Sexta: 9h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem Twilio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><span class="twilio-badge">Twilio</span> Tourinho & Orue</h5>
+                    <p>Artigos Esportivos LTDA</p>
+                    <p>CNPJ: 76.988.963/0001-07</p>
+                    <p>Fundada em 08/08/1983</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home Twilio</a></li>
+                        <li><a href="#about" class="text-light">Sobre Twilio</a></li>
+                        <li><a href="#products" class="text-light">Produtos Twilio</a></li>
+                        <li><a href="#contact" class="text-light">Contato Twilio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes Sociais</h5>
+                    <div>
+                        <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 <span class="highlight">Twilio</span> Tourinho & Orue Artigos Esportivos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
